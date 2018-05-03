@@ -33,14 +33,6 @@
 },
 {
   "model": "service_development.voicelabel",
-  "pk": 5,
-  "fields": {
-    "name": "Thank you for using this service",
-    "description": ""
-  }
-},
-{
-  "model": "service_development.voicelabel",
   "pk": 6,
   "fields": {
     "name": "Wow, it must be a really boring guy!",
@@ -204,6 +196,38 @@
   "pk": 28,
   "fields": {
     "name": "Would you like to add or listen?",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 29,
+  "fields": {
+    "name": "Thank you for choosing LMDF",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 30,
+  "fields": {
+    "name": "third_semester",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 31,
+  "fields": {
+    "name": "second_semester",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 32,
+  "fields": {
+    "name": "first_trimester",
     "description": null
   }
 },
@@ -737,33 +761,6 @@
 },
 {
   "model": "service_development.voicefragment",
-  "pk": 55,
-  "fields": {
-    "parent": 5,
-    "language": 1,
-    "audio": "thank_you_for_using_nl.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 56,
-  "fields": {
-    "parent": 5,
-    "language": 2,
-    "audio": "thank_you_for_using_en.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 57,
-  "fields": {
-    "parent": 5,
-    "language": 3,
-    "audio": "thank_you_for_using_fr.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
   "pk": 58,
   "fields": {
     "parent": 4,
@@ -943,6 +940,78 @@
   }
 },
 {
+  "model": "service_development.voicefragment",
+  "pk": 82,
+  "fields": {
+    "parent": 29,
+    "language": 2,
+    "audio": "thankyou_message_KElUz7c.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 83,
+  "fields": {
+    "parent": 29,
+    "language": 3,
+    "audio": "merci_message.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 84,
+  "fields": {
+    "parent": 30,
+    "language": 2,
+    "audio": "third_trimester.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 85,
+  "fields": {
+    "parent": 30,
+    "language": 3,
+    "audio": "troisieme_trimestre.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 86,
+  "fields": {
+    "parent": 31,
+    "language": 2,
+    "audio": "second_trimester.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 87,
+  "fields": {
+    "parent": 31,
+    "language": 3,
+    "audio": "deuxieme_trimestre.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 88,
+  "fields": {
+    "parent": 32,
+    "language": 2,
+    "audio": "first_trimester.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 89,
+  "fields": {
+    "parent": 32,
+    "language": 3,
+    "audio": "premier_trimstre.wav"
+  }
+},
+{
   "model": "service_development.voiceservicesubelement",
   "pk": 2,
   "fields": {
@@ -996,10 +1065,10 @@
   "fields": {
     "service": 2,
     "creation_date": "2017-04-23T21:11:06.805Z",
-    "modification_date": "2018-05-03T15:01:47.589Z",
+    "modification_date": "2018-05-03T20:26:11.321Z",
     "name": "Thank you for using this service",
     "description": "",
-    "voice_label": 5
+    "voice_label": 29
   }
 },
 {
@@ -1020,7 +1089,7 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-03T12:02:41.557Z",
-    "modification_date": "2018-05-03T15:01:33.342Z",
+    "modification_date": "2018-05-03T20:29:04.110Z",
     "name": "In which stage of the pregnancy?",
     "description": "",
     "voice_label": 27
@@ -1032,10 +1101,10 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-03T12:02:41.561Z",
-    "modification_date": "2018-05-03T15:01:33.344Z",
+    "modification_date": "2018-05-03T20:29:04.111Z",
     "name": "1",
     "description": "",
-    "voice_label": 11
+    "voice_label": 32
   }
 },
 {
@@ -1044,10 +1113,10 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-03T12:02:41.563Z",
-    "modification_date": "2018-05-03T15:01:33.347Z",
+    "modification_date": "2018-05-03T20:29:04.112Z",
     "name": "2",
     "description": "",
-    "voice_label": 12
+    "voice_label": 31
   }
 },
 {
@@ -1056,7 +1125,7 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-03T12:03:48.134Z",
-    "modification_date": "2018-05-03T15:06:49.096Z",
+    "modification_date": "2018-05-03T20:25:07.762Z",
     "name": "Would you like to add or listen to info?",
     "description": "l",
     "voice_label": 28
@@ -1068,10 +1137,10 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-03T12:03:48.136Z",
-    "modification_date": "2018-05-03T15:06:49.097Z",
+    "modification_date": "2018-05-03T20:25:07.765Z",
     "name": "listen",
     "description": "",
-    "voice_label": 5
+    "voice_label": 28
   }
 },
 {
@@ -1080,10 +1149,10 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-03T12:03:48.138Z",
-    "modification_date": "2018-05-03T15:06:49.098Z",
+    "modification_date": "2018-05-03T20:25:07.766Z",
     "name": "add",
     "description": "",
-    "voice_label": 5
+    "voice_label": 28
   }
 },
 {
@@ -1092,10 +1161,58 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-03T15:01:33.349Z",
-    "modification_date": "2018-05-03T15:01:33.349Z",
+    "modification_date": "2018-05-03T20:29:04.113Z",
     "name": "3",
     "description": "",
-    "voice_label": 13
+    "voice_label": 30
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 15,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-03T16:07:46.484Z",
+    "modification_date": "2018-05-03T16:07:46.484Z",
+    "name": "Symptoms_check",
+    "description": "",
+    "voice_label": 23
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 16,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-03T20:24:35.188Z",
+    "modification_date": "2018-05-03T20:24:35.188Z",
+    "name": "Which language would you prefer",
+    "description": "",
+    "voice_label": 8
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 17,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-03T20:24:35.190Z",
+    "modification_date": "2018-05-03T20:24:35.190Z",
+    "name": "English",
+    "description": "",
+    "voice_label": 4
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 18,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-03T20:24:35.193Z",
+    "modification_date": "2018-05-03T20:24:35.193Z",
+    "name": "French",
+    "description": "",
+    "voice_label": 7
   }
 },
 {
@@ -1129,6 +1246,16 @@
   "fields": {}
 },
 {
+  "model": "service_development.voiceserviceelement",
+  "pk": 15,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 16,
+  "fields": {}
+},
+{
   "model": "service_development.voiceservice",
   "pk": 1,
   "fields": {
@@ -1155,9 +1282,9 @@
     "name": "La Merveille des Femmes",
     "description": "lmdd",
     "creation_date": "2018-05-03T12:01:38.161Z",
-    "modification_date": "2018-05-03T12:05:42.600Z",
+    "modification_date": "2018-05-03T20:23:18.868Z",
     "active": true,
-    "_start_element": 8,
+    "_start_element": 11,
     "registration": "preferred",
     "registration_language": true,
     "registration_name": false,
@@ -1193,6 +1320,11 @@
 {
   "model": "service_development.choice",
   "pk": 11,
+  "fields": {}
+},
+{
+  "model": "service_development.choice",
+  "pk": 16,
   "fields": {}
 },
 {
@@ -1252,6 +1384,22 @@
   }
 },
 {
+  "model": "service_development.choiceoption",
+  "pk": 17,
+  "fields": {
+    "parent": 16,
+    "_redirect": 11
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 18,
+  "fields": {
+    "parent": 16,
+    "_redirect": 11
+  }
+},
+{
   "model": "service_development.messagepresentation",
   "pk": 5,
   "fields": {
@@ -1273,6 +1421,22 @@
   "fields": {
     "final_element": false,
     "_redirect": 6
+  }
+},
+{
+  "model": "service_development.record",
+  "pk": 15,
+  "fields": {
+    "not_heard_voice_label": 23,
+    "barge_in": true,
+    "repeat_recording_to_caller": true,
+    "repeat_voice_label": null,
+    "ask_confirmation": true,
+    "ask_confirmation_voice_label": null,
+    "final_voice_label": null,
+    "input_category": null,
+    "max_time_input": 180,
+    "_redirect": null
   }
 }
 ]
