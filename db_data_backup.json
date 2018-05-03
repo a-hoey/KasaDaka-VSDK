@@ -192,14 +192,6 @@
   }
 },
 {
-  "model": "service_development.voicelabel",
-  "pk": 26,
-  "fields": {
-    "name": "1_welcome",
-    "description": null
-  }
-},
-{
   "model": "service_development.language",
   "pk": 1,
   "fields": {
@@ -899,24 +891,6 @@
   }
 },
 {
-  "model": "service_development.voicefragment",
-  "pk": 75,
-  "fields": {
-    "parent": 26,
-    "language": 2,
-    "audio": "final_welcome.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 77,
-  "fields": {
-    "parent": 26,
-    "language": 3,
-    "audio": "final_welcome_9xzsKcM.wav"
-  }
-},
-{
   "model": "service_development.voiceservicesubelement",
   "pk": 2,
   "fields": {
@@ -994,10 +968,10 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-03T12:02:41.557Z",
-    "modification_date": "2018-05-03T12:04:42.684Z",
-    "name": "1_welcome",
+    "modification_date": "2018-05-03T13:23:27.591Z",
+    "name": "1_add_or_listen",
     "description": "",
-    "voice_label": 26
+    "voice_label": 23
   }
 },
 {
@@ -1006,10 +980,10 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-03T12:02:41.561Z",
-    "modification_date": "2018-05-03T12:04:42.685Z",
-    "name": "engels",
+    "modification_date": "2018-05-03T13:23:14.966Z",
+    "name": "yes",
     "description": "",
-    "voice_label": 11
+    "voice_label": 21
   }
 },
 {
@@ -1018,8 +992,8 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-03T12:02:41.563Z",
-    "modification_date": "2018-05-03T12:04:42.687Z",
-    "name": "frans",
+    "modification_date": "2018-05-03T13:23:14.967Z",
+    "name": "no",
     "description": "",
     "voice_label": 22
   }
@@ -1030,7 +1004,7 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-03T12:03:48.134Z",
-    "modification_date": "2018-05-03T12:03:48.134Z",
+    "modification_date": "2018-05-03T13:23:52.246Z",
     "name": "2_language",
     "description": "l",
     "voice_label": 1
