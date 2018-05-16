@@ -1,0 +1,43 @@
+{% load static %}
+
+<html>
+  <head>
+    <title>La Merveille Des Femmes Database</title>
+	 <link rel="stylesheet" type="text/css" href="{% static 'lmdf/style.css' %}" />
+	  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	  <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  </head>
+<body>
+	
+<div class="page-header">
+    <h1>La Merveille des Femmes</h1>
+	<img src="{% static 'lmdf/images/logo.png' %}" alt="logo"/>
+</div>
+	
+<div class="topnav">
+  <a href="{% url 'index' %}">Home</a>
+  <a href="{% url 'wiki' %}">Diagnoses</a>
+  <a href="{% url 'symptoms' %}">Symptoms</a>
+  <a class="active" href="{% url 'patients' %}">Patients</a>
+  <a class="languagesel" href="">English</a>
+  <a class="language" href="{% url 'patientsfr' %}">Français</a>
+</div>
+	
+<div class="content container">
+<table id="customers">
+	<tr><th>Patient</th></tr>
+	<tr>
+	{% for patient in patients %} 
+	<td>{{patient}}</td>
+	</tr>
+	<tr>
+  {% endfor %}
+	</tr>
+</table>
+</div>
+	
+
+    </body>
+</html>
+

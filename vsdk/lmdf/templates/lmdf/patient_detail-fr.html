@@ -1,0 +1,42 @@
+{% load static %}
+
+<html>
+  <head>
+    <title>La Merveille Des Femmes Database</title>
+	 <link rel="stylesheet" type="text/css" href="{% static 'lmdf/style.css' %}" />
+	  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	  <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  </head>
+<body>
+	
+<div class="page-header">
+    <h1>La Merveille des Femmes</h1>
+	<img src="{% static 'lmdf/images/logo.png' %}" alt="logo"/>
+</div>
+	
+<div class="topnav">
+  <a href="{% url 'indexfr' %}">Home</a>
+  <a href="{% url 'wikifr' %}">Diagnostic</a>
+  <a href="{% url 'symptomsfr' %}">Symptômes</a>
+  <a class="active" href="{% url 'patients' %}">Les Patients</a>
+  <a class="language" href="">English</a>
+  <a class="languagesel" href="{% url 'patientsfr' %}">Français</a>
+</div>
+	
+<div class="content container">
+<table id="customers">
+	<tr><th>Catégorie</th><th>Les Données</th></tr>
+	<tr><td> Les patients ID:</td><td>{{patient.id}}</td></tr>
+	<tr><td> Trimestre:</td><td>{{patient.trimester_id}}</td></tr>
+	<tr><td> Date de création:</td><td>{{patient.created_date}}</td></tr>
+	<tr><td> Diagnostic:</td><td>{{patient.diagnosis}}</td></tr>
+</table>
+</div>
+	
+
+    </body>
+</html>
+
+
+<br/>

@@ -1,0 +1,126 @@
+{% load static %}
+
+<html>
+  <head>
+    <title>La Merveille Des Femmes Database</title>
+	 <link rel="stylesheet" type="text/css" href="{% static 'lmdf/style.css' %}" />
+	  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	  <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  </head>
+<body>
+	
+<div class="page-header">
+    <h1>La Merveille des Femmes</h1>
+	<img src="{% static 'lmdf/images/logo.png' %}" alt="logo"/>
+</div>
+	
+<div class="topnav">
+  <a href="{% url 'index' %}">Home</a>
+  <a href="{% url 'wiki' %}">Diagnoses</a>
+  <a class="active" href="{% url 'symptoms' %}">Symptoms</a>
+  <a href="{% url 'patients' %}">Patients</a>
+  <a class="languagesel" href="">English</a>
+  <a class="language" href="{% url 'symptomsfr' %}">Français</a>
+</div>
+	
+	
+<div class="content container">
+<table id="customers">
+	<tr><th>Symptoms</th></tr>
+	<tr>
+	{% for symptom in symptoms %}
+	<td>{{symptom}}</td>
+	</tr>
+	<tr>
+  {% endfor %}
+	</tr>
+</table>
+	
+<table id="customers">
+	<tr><th>Patient(s) with Bloodloss</th><th>Link</th></tr>
+	<tr>
+	{% for case in cases1 %}
+	<td>Patient no: {{case.id}}</td>
+		<td><a class="language" href="{% url 'patient-detail' case.id %}">Go to case</a></td>
+	</tr>
+	<tr>
+  {% endfor %}
+	</tr>
+</table>
+	
+<table id="customers">
+	<tr><th>Patient(s) with Vaginal Spotting</th><th>Link</th></tr>
+	<tr>
+	{% for case in cases2 %}
+	<td>Patient no: {{case.id}}</td>
+		<td><a class="language" href="{% url 'patient-detail' case.id %}">Go to case</a></td></tr>
+	<tr>
+  {% endfor %}
+	</tr>
+</table>
+	
+<table id="customers">
+	<tr><th>Patient(s) with High Blood Pressure</th><th>Link</th></tr>
+	<tr>
+	{% for case in cases3 %}
+	<td>Patient no: {{case.id}}</td>
+	<td><a class="language" href="{% url 'patient-detail' case.id %}">Go to case</a></td>
+	</tr>
+	<tr>
+  {% endfor %}
+	</tr>
+</table>
+	
+<table id="customers">
+	<tr><th>Patient(s) with Bloodloss and High Blood Pressure</th><th>Link</th></tr>
+	<tr>
+	{% for case in cases4 %}
+	<td>Patient no: {{case.id}}</td>
+	<td><a class="language" href="{% url 'patient-detail' case.id %}">Go to case</a></td>
+	</tr>
+	<tr>
+  {% endfor %}
+	</tr>
+</table>
+
+<table id="customers">
+	<tr><th>Patient(s) with Vaginal Spotting and High Blood Pressure</th><th>Link</th></tr>
+	<tr>
+	{% for case in cases5 %}
+	<td>Patient no: {{case.id}}</td>
+	<td><a class="language" href="{% url 'patient-detail' case.id %}">Go to case</a></td>
+	</tr>
+	<tr>
+  {% endfor %}
+	</tr>
+</table>
+
+<table id="customers">
+	<tr><th>Patient(s) with Bloodloss and Vaginal Spotting</th><th>Link</th></tr>
+	<tr>
+	{% for case in cases6 %}
+	<td>Patient no: {{case.id}}</td>
+	<td><a class="language" href="{% url 'patient-detail' case.id %}">Go to case</a></td>
+	</tr>
+	<tr>
+  {% endfor %}
+	</tr>
+</table>
+	
+<table id="customers">
+	<tr><th>Patient(s) with Bloodloss, Vaginal Spotting and High Blood Pressure</th><th>Link</th></tr>
+	<tr>
+	{% for case in cases7 %}
+	<td>Patient no: {{case.id}}</td>
+	<td><a class="language" href="{% url 'patient-detail' case.id %}">Go to case</a></td>
+	</tr>
+	<tr>
+  {% endfor %}
+	</tr>
+</table>
+</div>
+	
+ </body>
+</html>
+

@@ -1,0 +1,73 @@
+{% load static %}
+
+<html>
+  <head>
+    <title>La Merveille Des Femmes Database</title>
+	 <link rel="stylesheet" type="text/css" href="{% static 'lmdf/style.css' %}" />
+	  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	  <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  </head>
+<body>
+	
+<div class="page-header">
+    <h1>La Merveille des Femmes</h1>
+	<img src="{% static 'lmdf/images/logo.png' %}" alt="logo"/>
+</div>
+	
+<div class="topnav">
+  <a href="{% url 'index' %}">Home</a>
+  <a class="active" href="{% url 'wiki' %}">Diagnoses</a>
+  <a href="{% url 'symptoms' %}">Symptoms</a>
+  <a href="{% url 'patients' %}">Patients</a>
+  <a class="languagesel" href="">English</a>
+  <a class="language" href="{% url 'wikifr' %}">Français</a>
+</div>
+	
+	
+<div class="content container">
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-xs-12 image-container">
+      <img src="{% static 'lmdf/images/preeclamp.jpg' %}" style="height:200px; margin-left:-15px;" />
+    </div>
+	<div class="col-sm-4 col-md-4 col-xs-12">  
+      <h1>Pre-eclampsia</h1>
+	  <p>Preeclampsia is a pregnancy complication that causes high blood pressure, kidney damage, and other problems. Preeclampsia is a potentially life-threatening condition that affects about 5 percent of pregnant women in the United States.
+
+Preeclampsia may not cause any symptoms but can still be very dangerous to you and your baby, even if you feel fine. Your healthcare provider will screen you for the condition at every prenatal visit by taking your blood pressure, and if it's high, testing your urine for protein.
+
+
+Preeclampsia most commonly develops during the last trimester, but it can happen at any time in the second half of pregnancy, during labor, or even up to six weeks after delivery. It can become severe very quickly or progress slowly. Left untreated, it can lead to dangerous health problems for you and your baby, such as HELLP syndrome and eclampsia</p>
+		
+		<form>
+<input class="MyButton" type="button" value="Go to cases" onclick="" />
+</form>
+    </div>
+  </div>
+	
+<div class="row">
+    <div class="col-sm-6 col-md-6 col-xs-12 image-container">
+      <img src="{% static 'lmdf/images/miscarriage.jpg' %}" style="height:200px; margin-left:-15px;" />
+    </div>
+	<div class="col-sm-4 col-md-4 col-xs-12">  
+      <h1>Miscarriage</h1>
+	  <p>If you experience any or all of these symptoms, it is important to contact your health care provider or a medical facility to evaluate if you could be having a miscarriage:
+
+Mild to severe back pain (often worse than normal menstrual cramps)
+Weight loss
+White-pink mucus
+True contractions (very painful happening every 5-20 minutes)
+Brown or bright red bleeding with or without cramps (20-30% of all pregnancies can experience some bleeding in early pregnancy, with about 50% of those resulting in normal pregnancies)
+Tissue with clot like material passing from the vagina
+Sudden decrease in signs of pregnancy</p>
+		<form>
+<input class="MyButton" type="button" value="Go to cases" onclick="" />
+</form>
+		
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
+

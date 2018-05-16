@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'vsdk.lmdf.apps.LmdfConfig',
 ]
 
 
@@ -144,8 +145,6 @@ MEDIA_URL = '/uploads/'
 
 # Update database configuration with $DATABASE_URL.ALLOWED_HOSTSimport
 # dj_database_url
-
-
 
 
 try:

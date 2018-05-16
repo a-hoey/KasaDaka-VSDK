@@ -1,0 +1,138 @@
+[
+{
+  "model": "lmdf.symptoms",
+  "pk": 1,
+  "fields": {
+    "symptom": "Bloodloss",
+    "symptom_fr": "Perte de sang"
+  }
+},
+{
+  "model": "lmdf.symptoms",
+  "pk": 2,
+  "fields": {
+    "symptom": "Vaginal spotting",
+    "symptom_fr": "Saignement vaginal"
+  }
+},
+{
+  "model": "lmdf.symptoms",
+  "pk": 3,
+  "fields": {
+    "symptom": "High blood pressure",
+    "symptom_fr": "Hypertension"
+  }
+},
+{
+  "model": "lmdf.trimester",
+  "pk": 1,
+  "fields": {
+    "trimester": "1"
+  }
+},
+{
+  "model": "lmdf.trimester",
+  "pk": 2,
+  "fields": {
+    "trimester": "2"
+  }
+},
+{
+  "model": "lmdf.trimester",
+  "pk": 3,
+  "fields": {
+    "trimester": "3"
+  }
+},
+{
+  "model": "lmdf.diagnosis",
+  "pk": 1,
+  "fields": {
+    "diagnosis": "Pre-eclampsia",
+    "diagnosis_fr": "Pr\u00e9-\u00e9clampsie"
+  }
+},
+{
+  "model": "lmdf.diagnosis",
+  "pk": 2,
+  "fields": {
+    "diagnosis": "Miscarriage",
+    "diagnosis_fr": "Fausse couche"
+  }
+},
+{
+  "model": "lmdf.patient",
+  "pk": 1,
+  "fields": {
+    "casenumber": "1.1",
+    "diagnosis": 2,
+    "trimester": 2,
+    "created_date": "2018-05-09T08:24:38Z",
+    "published_date": "2018-05-15T17:12:06Z",
+    "symptoms": [
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "lmdf.patient",
+  "pk": 2,
+  "fields": {
+    "casenumber": "1.2",
+    "diagnosis": 1,
+    "trimester": 3,
+    "created_date": "2018-05-09T08:24:38Z",
+    "published_date": "2018-05-15T17:12:14Z",
+    "symptoms": [
+      1
+    ]
+  }
+},
+{
+  "model": "lmdf.patient",
+  "pk": 3,
+  "fields": {
+    "casenumber": "2.1",
+    "diagnosis": 2,
+    "trimester": 1,
+    "created_date": "2018-05-09T08:24:38Z",
+    "published_date": null,
+    "symptoms": [
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "lmdf.patient",
+  "pk": 4,
+  "fields": {
+    "casenumber": "2.2",
+    "diagnosis": 1,
+    "trimester": 3,
+    "created_date": "2018-05-09T08:24:38Z",
+    "published_date": null,
+    "symptoms": [
+      2
+    ]
+  }
+},
+{
+  "model": "lmdf.patient",
+  "pk": 5,
+  "fields": {
+    "casenumber": "hello",
+    "diagnosis": 2,
+    "trimester": 2,
+    "created_date": "2018-05-16T07:35:34Z",
+    "published_date": null,
+    "symptoms": [
+      1,
+      3
+    ]
+  }
+}
+]

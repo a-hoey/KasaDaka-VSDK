@@ -1,0 +1,46 @@
+{% load static %}
+{% load i18n %}
+
+<html>
+  <head>
+    <title>La Merveille Des Femmes Database</title>
+	 <link rel="stylesheet" type="text/css" href="{% static 'lmdf/style.css' %}" />
+	  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	  <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  </head>
+<body>
+	
+<div class="page-header">
+    <h1>La Merveille des Femmes</h1>
+	<img src="{% static 'lmdf/images/logo.png' %}" alt="logo"/>
+</div>
+	
+<div class="topnav">
+  <a class="active" href="{% url 'index' %}">Home</a>
+  <a href="{% url 'wiki' %}">Diagnoses</a>
+  <a href="{% url 'symptoms' %}">Symptoms</a>
+  <a href="{% url 'patients' %}">Patients</a>
+  <a class="languagesel" href="">English</a>
+  <a class="language" href="{% url 'indexfr' %}">Français</a>
+</div>
+	
+<div class="content container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3" style="margin-top: 20px">
+			<div class="content body">
+				<p>
+			Welcome to the web interface of La Merveille des Femmes. Here you can find the information that is stored in the database sorted by diagnosis. You can find symptoms that are related to certain diagnoses under the header “symptoms”. Specific cases are stored under the header “cases”. <br><br>
+
+If you are a physician and you would like to add information to the system, you are asked to call the number <i>020-369 76 64</i> and choose the option “add information to the system”.  If you have any questions or concerns about the content of this web page, you can send an email to our system owner at <a href="mailto:systemowner.merveilledesfemmes@gmail.com"><b>systemowner.merveilledesfemmes@gmail.com</b></a>. <br><br>
+
+Note that if you are not a physician, this web page <b>can not</b> be used for medical advice on complaints. If you are a pregnant woman or consult this web page for a pregnant woman with specific symptoms during her pregnancy, you are urged to consult a doctor, who may consult this system for more information.</p>
+			</div>
+			
+        </div>
+    </div>
+</div>
+	
+</body>
+</html>
+
