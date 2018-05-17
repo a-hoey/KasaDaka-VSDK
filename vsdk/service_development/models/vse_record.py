@@ -22,7 +22,6 @@ class Record(VoiceServiceElement):
         blank=True,
         related_name='not_heard_voice_label'
     )
-    barge_in = models.BooleanField(_('Allow the caller to start recording immediately'), default=True)
     repeat_recording_to_caller = models.BooleanField(_('Repeat the recording to the caller before asking for confirmation'), default=True)
     repeat_voice_label = models.ForeignKey(
         VoiceLabel,

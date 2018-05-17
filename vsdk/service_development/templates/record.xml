@@ -4,7 +4,7 @@
 <form id="record_form">
 
 	<record name="recording" beep="true" maxtime="{{ max_time_input }}s"
-  finalsilence="4s" dtmfterm="true" {% if record.barge_in %} bargein="true" {% endif %} >
+  finalsilence="4s" dtmfterm="true">
 <prompt>
 <audio src="{{ voice_label }}"/>
 </prompt>
@@ -61,8 +61,8 @@
 <block>
     <prompt>
         <audio src="{{final_voice_label}}"/>
-        <goto next="{{ redirect_url }}" />
     </prompt>
+    <goto next="{{ redirect_url }}" />
 </block>
 
 
