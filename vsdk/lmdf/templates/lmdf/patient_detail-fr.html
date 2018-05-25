@@ -8,6 +8,11 @@
 	  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	  <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   </head>
+<script>
+function goBack() {
+    window.history.back()
+}
+</script>
 <body>
 	
 <div class="page-header">
@@ -20,7 +25,7 @@
   <a href="{% url 'wikifr' %}">Diagnostic</a>
   <a href="{% url 'symptomsfr' %}">Symptômes</a>
   <a class="active" href="{% url 'patients' %}">Les Patients</a>
-  <a class="language" href="">English</a>
+  <a class="language" href="{% url 'patients' %}">English</a>
   <a class="languagesel" href="{% url 'patientsfr' %}">Français</a>
 </div>
 	
@@ -28,13 +33,14 @@
 <table id="customers">
 	<tr><th>Catégorie</th><th>Les Données</th></tr>
 	<tr><td> Les patients ID:</td><td>{{patient.id}}</td></tr>
+	<tr><td> Áge:</td><td>{{patient.age}}</td></tr>
 	<tr><td> Trimestre:</td><td>{{patient.trimester_id}}</td></tr>
 	<tr><td> Date de création:</td><td>{{patient.created_date}}</td></tr>
 	<tr><td> Diagnostic:</td><td>{{patient.diagnosis}}</td></tr>
+	<tr><td> Commentaire:</td><td>{{patient.commentsfr}}</td></tr>
 </table>
+	<a href="{% url 'patientsfr' %}" class="button">Rentrer</a>
 </div>
-	
-
     </body>
 </html>
 

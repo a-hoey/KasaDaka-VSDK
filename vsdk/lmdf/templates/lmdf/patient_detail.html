@@ -8,6 +8,11 @@
 	  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	  <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   </head>
+<script>
+function goBack() {
+    window.history.back()
+}
+</script>
 <body>
 	
 <div class="page-header">
@@ -28,12 +33,15 @@
 <table id="customers">
 	<tr><th>Category</th><th>Data</th></tr>
 	<tr><td> Patient ID:</td><td>{{patient.id}}</td></tr>
+	<tr><td> Age:</td><td>{{patient.age}}</td></tr>
 	<tr><td> Trimester:</td><td>{{patient.trimester_id}}</td></tr>
 	<tr><td> Created Date:</td><td>{{patient.created_date}}</td></tr>
 	<tr><td> Diagnosis:</td><td>{{patient.diagnosis}}</td></tr>
 	<tr><td> Comments:</td><td>{{patient.comments}}</td></tr>
 </table>
+<a href="{% url 'patients' %}" class="button">Go Back</a>
 </div>
+
 	
 
     </body>

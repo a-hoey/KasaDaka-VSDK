@@ -38,29 +38,6 @@
 </table>
 	
 <table id="customers">
-	<tr><th>Patient(s) with Bloodloss</th><th>Link</th></tr>
-	<tr>
-	{% for case in cases1 %}
-	<td>Patient no: {{case.id}}</td>
-		<td><a class="language" href="{% url 'patient-detail' case.id %}">Go to case</a></td>
-	</tr>
-	<tr>
-  {% endfor %}
-	</tr>
-</table>
-	
-<table id="customers">
-	<tr><th>Patient(s) with Vaginal Spotting</th><th>Link</th></tr>
-	<tr>
-	{% for case in cases2 %}
-	<td>Patient no: {{case.id}}</td>
-		<td><a class="language" href="{% url 'patient-detail' case.id %}">Go to case</a></td></tr>
-	<tr>
-  {% endfor %}
-	</tr>
-</table>
-	
-<table id="customers">
 	<tr><th>Patient(s) with High Blood Pressure</th><th>Link</th></tr>
 	<tr>
 	{% for case in cases3 %}
@@ -73,7 +50,7 @@
 </table>
 	
 <table id="customers">
-	<tr><th>Patient(s) with Bloodloss and High Blood Pressure</th><th>Link</th></tr>
+	<tr><th>Patient(s) with Fever</th><th>Link</th></tr>
 	<tr>
 	{% for case in cases4 %}
 	<td>Patient no: {{case.id}}</td>
@@ -85,7 +62,7 @@
 </table>
 
 <table id="customers">
-	<tr><th>Patient(s) with Vaginal Spotting and High Blood Pressure</th><th>Link</th></tr>
+	<tr><th>Patient(s) with Proteinuria</th><th>Link</th></tr>
 	<tr>
 	{% for case in cases5 %}
 	<td>Patient no: {{case.id}}</td>
@@ -97,7 +74,7 @@
 </table>
 
 <table id="customers">
-	<tr><th>Patient(s) with Bloodloss and Vaginal Spotting</th><th>Link</th></tr>
+	<tr><th>Patient(s) with Oedema</th><th>Link</th></tr>
 	<tr>
 	{% for case in cases6 %}
 	<td>Patient no: {{case.id}}</td>
@@ -109,7 +86,31 @@
 </table>
 	
 <table id="customers">
-	<tr><th>Patient(s) with Bloodloss, Vaginal Spotting and High Blood Pressure</th><th>Link</th></tr>
+	<tr><th>Patient(s) with Headache</th><th>Link</th></tr>
+	<tr>
+	{% for case in cases7 %}
+	<td>Patient no: {{case.id}}</td>
+	<td><a class="language" href="{% url 'patient-detail' case.id %}">Go to case</a></td>
+	</tr>
+	<tr>
+  {% endfor %}
+	</tr>
+</table>
+	
+<table id="customers">
+	<tr><th>Patient(s) with Blurred Vision</th><th>Link</th></tr>
+	<tr>
+	{% for case in cases7 %}
+	<td>Patient no: {{case.id}}</td>
+	<td><a class="language" href="{% url 'patient-detail' case.id %}">Go to case</a></td>
+	</tr>
+	<tr>
+  {% endfor %}
+	</tr>
+</table>
+	
+<table id="customers">
+	<tr><th>Patient(s) with Abdominal Pain</th><th>Link</th></tr>
 	<tr>
 	{% for case in cases7 %}
 	<td>Patient no: {{case.id}}</td>

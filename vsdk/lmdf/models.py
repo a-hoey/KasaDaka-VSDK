@@ -29,12 +29,14 @@ class Patient(models.Model):
 	_urls_name = 'lmdf:patient_detail_fr'
 	
 	casenumber = models.CharField(max_length=20)
+	age = models.CharField(max_length=20)
 	diagnosis = models.ForeignKey(Diagnosis, on_delete=models.CASCADE )
 	trimester = models.ForeignKey(Trimester, on_delete=models.CASCADE)
 	created_date = models.DateTimeField(default=timezone.now)
 	published_date = models.DateTimeField(blank=True, null=True)
 	symptoms = models.ManyToManyField(Symptoms)
-	comments = models.TextField(max_length=300)
+	comments = models.TextField(max_length=1000)
+	commentsfr = models.TextField(max_length=1000)
 	
 	def publish(self):
 		self.published_date = timezone.now()

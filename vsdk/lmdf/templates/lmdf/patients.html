@@ -8,6 +8,7 @@
 	  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	  <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   </head>
+
 <body>
 	
 <div class="page-header">
@@ -26,18 +27,21 @@
 	
 <div class="content container">
 <table id="customers">
-	<tr><th>Patient</th></tr>
+	<tr><th>Patient(s)</th><th>Link</th></tr>
 	<tr>
-	{% for patient in patients %} 
-	<td>{{patient}}</td>
+	{% for patient in patients %}
+	<td>Patient no: {{patient.id}}</td>
+	<td><a class="language" href="{% url 'patient-detail' patient.id %}">Go to case</a></td>
 	</tr>
 	<tr>
   {% endfor %}
 	</tr>
 </table>
+
+
+
 </div>
 	
-
-    </body>
+ </body>
 </html>
 

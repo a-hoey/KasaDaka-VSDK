@@ -36,28 +36,6 @@
 	</tr>
 </table>
 	
-<table id="customers">
-	<tr><th>Patients avec Perte de sang</th><th>Link</th></tr>
-	<tr>
-	{% for case in cases1 %}
-	<td>Patient nombre: {{case.id}}</td>
-		<td><a class="language" href="{% url 'patient-detail-fr' case.id %}">Aller au patient</a></td>
-	</tr>
-	<tr>
-  {% endfor %}
-	</tr>
-</table>
-	
-<table id="customers">
-	<tr><th>Patients aves Saignement vaginal</th><th>Link</th></tr>
-	<tr>
-	{% for case in cases2 %}
-	<td>Patient nombre: {{case.id}}</td>
-		<td><a class="language" href="{% url 'patient-detail-fr' case.id %}">Aller au patient</a></td></tr>
-	<tr>
-  {% endfor %}
-	</tr>
-</table>
 	
 <table id="customers">
 	<tr><th>Patients avec Hypertension</th><th>Link</th></tr>
@@ -72,7 +50,7 @@
 </table>
 	
 <table id="customers">
-	<tr><th>Patients avec Perte de sang et Hypertension</th><th>Link</th></tr>
+	<tr><th>Patients avec Fièvre</th><th>Link</th></tr>
 	<tr>
 	{% for case in cases4 %}
 	<td>Patient nombre: {{case.id}}</td>
@@ -84,7 +62,7 @@
 </table>
 
 <table id="customers">
-	<tr><th>Patients avec Saignement vaginal et Hypertension</th><th>Link</th></tr>
+	<tr><th>Patients avec Protéinurie</th><th>Link</th></tr>
 	<tr>
 	{% for case in cases5 %}
 	<td>Patient nombre: {{case.id}}</td>
@@ -96,7 +74,7 @@
 </table>
 
 <table id="customers">
-	<tr><th>Patients avec Perte de Sang et Saignement vaginal</th><th>Link</th></tr>
+	<tr><th>Patients avec Edème</th><th>Link</th></tr>
 	<tr>
 	{% for case in cases6 %}
 	<td>Patient nombre: {{case.id}}</td>
@@ -108,7 +86,34 @@
 </table>
 	
 <table id="customers">
-	<tr><th>Patients avec Perte de Sang, Saignement vaginal et Hypertension</th><th>Link</th></tr>
+	<tr><th>Patients avec Céphalée
+</th><th>Link</th></tr>
+	<tr>
+	{% for case in cases7 %}
+	<td>Patient nombre: {{case.id}}</td>
+	<td><a class="language" href="{% url 'patient-detail-fr' case.id %}">Aller au patient</a></td>
+	</tr>
+	<tr>
+  {% endfor %}
+	</tr>
+</table>
+	
+<table id="customers">
+	<tr><th>Patients avec Voir Flou
+</th><th>Link</th></tr>
+	<tr>
+	{% for case in cases7 %}
+	<td>Patient nombre: {{case.id}}</td>
+	<td><a class="language" href="{% url 'patient-detail-fr' case.id %}">Aller au patient</a></td>
+	</tr>
+	<tr>
+  {% endfor %}
+	</tr>
+</table>
+	
+<table id="customers">
+	<tr><th>Patients avec Douleur abdominale
+</th><th>Link</th></tr>
 	<tr>
 	{% for case in cases7 %}
 	<td>Patient nombre: {{case.id}}</td>

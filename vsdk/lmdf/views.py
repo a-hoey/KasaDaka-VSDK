@@ -22,10 +22,10 @@ def symptoms(request):
 	cases1 = Patient.objects.filter(symptoms__id=1)
 	cases2 = Patient.objects.filter(symptoms__id=2)
 	cases3 = Patient.objects.filter(symptoms__id=3)
-	cases4 = Patient.objects.filter(symptoms__id=3).filter(symptoms__id=1)
-	cases5 = Patient.objects.filter(symptoms__id=3).filter(symptoms__id=2)
-	cases6 = Patient.objects.filter(symptoms__id=1).filter(symptoms__id=2)
-	cases7 = Patient.objects.filter(symptoms__id=3).filter(symptoms__id=1).filter(symptoms__id=2)
+	cases4 = Patient.objects.filter(symptoms__id=4)
+	cases5 = Patient.objects.filter(symptoms__id=5)
+	cases6 = Patient.objects.filter(symptoms__id=6)
+	cases7 = Patient.objects.filter(symptoms__id=7)
 	return render(request, 'lmdf/symptoms.html', {'symptoms': symptoms,
 												 'cases1': cases1,
 												 'cases2': cases2,
@@ -41,10 +41,10 @@ def symptomsfr(request):
 	cases1 = Patient.objects.filter(symptoms__id=1)
 	cases2 = Patient.objects.filter(symptoms__id=2)
 	cases3 = Patient.objects.filter(symptoms__id=3)
-	cases4 = Patient.objects.filter(symptoms__id=3).filter(symptoms__id=1)
-	cases5 = Patient.objects.filter(symptoms__id=3).filter(symptoms__id=2)
-	cases6 = Patient.objects.filter(symptoms__id=1).filter(symptoms__id=2)
-	cases7 = Patient.objects.filter(symptoms__id=3).filter(symptoms__id=1).filter(symptoms__id=2)
+	cases4 = Patient.objects.filter(symptoms__id=4)
+	cases5 = Patient.objects.filter(symptoms__id=5)
+	cases6 = Patient.objects.filter(symptoms__id=6)
+	cases7 = Patient.objects.filter(symptoms__id=7)
 	return render(request, 'lmdf/symptoms-fr.html', {'symptoms': symptoms,
 													'cases1': cases1,
 												 	'cases2': cases2,

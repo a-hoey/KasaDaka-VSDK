@@ -1,0 +1,189 @@
+[
+{
+  "model": "lmdf.symptoms",
+  "pk": 3,
+  "fields": {
+    "symptom": "High blood pressure",
+    "symptom_fr": "Hypertension"
+  }
+},
+{
+  "model": "lmdf.symptoms",
+  "pk": 4,
+  "fields": {
+    "symptom": "Fever",
+    "symptom_fr": "Fi\u00e8vre"
+  }
+},
+{
+  "model": "lmdf.symptoms",
+  "pk": 6,
+  "fields": {
+    "symptom": "Proteinuria",
+    "symptom_fr": "Prot\u00e9inurie"
+  }
+},
+{
+  "model": "lmdf.symptoms",
+  "pk": 7,
+  "fields": {
+    "symptom": "Oedema",
+    "symptom_fr": "Ed\u00e8me"
+  }
+},
+{
+  "model": "lmdf.symptoms",
+  "pk": 8,
+  "fields": {
+    "symptom": "Headache",
+    "symptom_fr": "C\u00e9phal\u00e9e"
+  }
+},
+{
+  "model": "lmdf.symptoms",
+  "pk": 9,
+  "fields": {
+    "symptom": "Blurred Vision",
+    "symptom_fr": "Voir Flou"
+  }
+},
+{
+  "model": "lmdf.symptoms",
+  "pk": 10,
+  "fields": {
+    "symptom": "Abdominal Pain",
+    "symptom_fr": "Douleur abdominale"
+  }
+},
+{
+  "model": "lmdf.trimester",
+  "pk": 1,
+  "fields": {
+    "trimester": "1"
+  }
+},
+{
+  "model": "lmdf.trimester",
+  "pk": 2,
+  "fields": {
+    "trimester": "2"
+  }
+},
+{
+  "model": "lmdf.trimester",
+  "pk": 3,
+  "fields": {
+    "trimester": "3"
+  }
+},
+{
+  "model": "lmdf.diagnosis",
+  "pk": 1,
+  "fields": {
+    "diagnosis": "Pre-eclampsia",
+    "diagnosis_fr": "Pr\u00e9-\u00e9clampsie"
+  }
+},
+{
+  "model": "lmdf.diagnosis",
+  "pk": 3,
+  "fields": {
+    "diagnosis": "Malaria",
+    "diagnosis_fr": "Paludisme"
+  }
+},
+{
+  "model": "lmdf.patient",
+  "pk": 1,
+  "fields": {
+    "casenumber": "1.1",
+    "age": "36",
+    "diagnosis": 1,
+    "trimester": 3,
+    "created_date": "2018-05-09T08:24:38Z",
+    "published_date": "2018-05-15T17:12:06Z",
+    "comments": "Female had a sudden development of oedema in the face and severe headache. On examination her blood pressure was elevated at 171/107, and her pulse 81 beats per minute. Her urine sample show ++2 proteinuria. She was admitted to the hospital and treatment was commenced with 10mg nifedipine. Her blood pressure was monitored continuously. The next morning her blood pressure stabilised to 128/74 mm Hg and she reported feeling better. With the BP stable and a reassuring CTG a decision to induce delivery was made and she was given Prostaglandin E2 (PGE2) over three days. However there was poor response and the cervix remained obstinately unchanged and so it was decided the baby would need to be delivered via caesarean section. They both recovered well.",
+    "commentsfr": "La femme avait un d\u00e9veloppement soudain d'\u0153d\u00e8me au visage et de c\u00e9phal\u00e9e s\u00e9v\u00e8re. \u00c0 l'examen, sa tension art\u00e9rielle \u00e9tait \u00e9lev\u00e9e \u00e0 171/107 et son pouls \u00e0 81 battements par minute. Son \u00e9chantillon d'urine montre la prot\u00e9inurie ++ 2. Elle a \u00e9t\u00e9 admise \u00e0 l'h\u00f4pital et le traitement a \u00e9t\u00e9 commenc\u00e9 avec 10 mg de nif\u00e9dipine. Sa tension art\u00e9rielle \u00e9tait surveill\u00e9e en permanence. Le lendemain matin, sa tension art\u00e9rielle s'est stabilis\u00e9e \u00e0 128/74 mm Hg et elle a d\u00e9clar\u00e9 se sentir mieux. Avec l'\u00e9table BP et un CTG rassurant, la d\u00e9cision d'induire l'accouchement a \u00e9t\u00e9 prise et elle a re\u00e7u de la Prostaglandine E2 (PGE2) pendant trois jours. Cependant, il y avait une mauvaise r\u00e9ponse et le col de l'ut\u00e9rus est rest\u00e9 obstin\u00e9ment inchang\u00e9 et il a donc \u00e9t\u00e9 d\u00e9cid\u00e9 que le b\u00e9b\u00e9 aurait besoin d'\u00eatre livr\u00e9 par c\u00e9sarienne. Ils ont tous deux bien r\u00e9cup\u00e9r\u00e9.",
+    "symptoms": [
+      3,
+      6,
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "lmdf.patient",
+  "pk": 2,
+  "fields": {
+    "casenumber": "1.2",
+    "age": "21",
+    "diagnosis": 1,
+    "trimester": 3,
+    "created_date": "2018-05-09T08:24:38Z",
+    "published_date": "2018-05-15T17:12:14Z",
+    "comments": "High blood pressure and high proteinuria values discovered during prenatal check up. Recommended treatment was increasing the check ups, consuming less salt, drink at least 8 glasses of water a day, include more protein in diet. She delivered a healthy baby because it was detected early.",
+    "commentsfr": "Pression art\u00e9rielle \u00e9lev\u00e9e et valeurs de prot\u00e9inurie \u00e9lev\u00e9es d\u00e9couvertes pendant le contr\u00f4le pr\u00e9natal. Le traitement recommand\u00e9 augmentait les bilans, consommait moins de sel, buvait au moins 8 verres d'eau par jour, incluait plus de prot\u00e9ines dans l'alimentation. Elle a donn\u00e9 un b\u00e9b\u00e9 en bonne sant\u00e9 parce qu'il a \u00e9t\u00e9 d\u00e9tect\u00e9 t\u00f4t.",
+    "symptoms": [
+      3,
+      6
+    ]
+  }
+},
+{
+  "model": "lmdf.patient",
+  "pk": 3,
+  "fields": {
+    "casenumber": "2.1",
+    "age": "16",
+    "diagnosis": 1,
+    "trimester": 3,
+    "created_date": "2018-05-09T08:24:38Z",
+    "published_date": null,
+    "comments": "Very high blood pressure (greater than 160 systolic), vomiting with abdominal pain, severe headache, blurry vision, 5g protein in urine. Admitted immediately, developed complication namely pulmonary edema.They both didn\u2019t survive.",
+    "commentsfr": "Tension art\u00e9rielle tr\u00e8s \u00e9lev\u00e9e (sup\u00e9rieure \u00e0 160 systolique), vomissements accompagn\u00e9s de douleurs abdominales, maux de t\u00eate s\u00e9v\u00e8res, vision floue, 5g de prot\u00e9ines dans l'urine. Admis imm\u00e9diatement, complication d\u00e9velopp\u00e9e \u00e0 savoir l'\u0153d\u00e8me pulmonaire.Ils n'ont pas surv\u00e9cu.",
+    "symptoms": [
+      3,
+      6,
+      9,
+      10
+    ]
+  }
+},
+{
+  "model": "lmdf.patient",
+  "pk": 4,
+  "fields": {
+    "casenumber": "2.2",
+    "age": "23",
+    "diagnosis": 3,
+    "trimester": 1,
+    "created_date": "2018-05-09T08:24:38Z",
+    "published_date": null,
+    "comments": "Female, 23 years old, 11 weeks pregnant, first trimester  high fever, swelling in foot and face, after examination of the blood malaria parasites found in the placenta. The patient did not have complications with the pregnancy when she went to the physician. Malaria was diagnosed in time and a combination of  quinine and clindamycin was used as a treatment. She delivered a healthy baby 2 weeks early.",
+    "commentsfr": "Femme, 23 ans, enceinte de 11 semaines, fi\u00e8vre \u00e9lev\u00e9e au premier trimestre, gonflement des pieds et du visage, apr\u00e8s examen des parasites du paludisme sanguin dans le placenta. La patiente n'a pas eu de complications avec la grossesse lorsqu'elle est all\u00e9e chez le m\u00e9decin. Le paludisme a \u00e9t\u00e9 diagnostiqu\u00e9 \u00e0 temps et une combinaison de quinine et de clindamycine a \u00e9t\u00e9 utilis\u00e9e comme traitement. Elle a donn\u00e9 un b\u00e9b\u00e9 en sant\u00e9 deux semaines plus t\u00f4t.",
+    "symptoms": [
+      4,
+      7
+    ]
+  }
+},
+{
+  "model": "lmdf.patient",
+  "pk": 5,
+  "fields": {
+    "casenumber": "2.2",
+    "age": "27",
+    "diagnosis": 3,
+    "trimester": 2,
+    "created_date": "2018-05-16T07:35:34Z",
+    "published_date": null,
+    "comments": "Came in with fever attacks that came every 48 hours, she felt like she had the flu and experiences muscle aches. Malaria was discovered and also the severe condition Acute pulmonary oedema (severe form of anemia) in an early stage. As treatment the patient was admitted to the hospital where she got artemisinin combination therapy (ACT), she delivered her baby 4 weeks early, the baby had low birth weight, but both survived.",
+    "commentsfr": "Entr\u00e9 en crise de fi\u00e8vre toutes les 48 heures, elle avait l'impression d'avoir la grippe et de ressentir des douleurs musculaires. Le paludisme a \u00e9t\u00e9 d\u00e9couvert et aussi la condition s\u00e9v\u00e8re \u0153d\u00e8me pulmonaire aigu (forme s\u00e9v\u00e8re d'an\u00e9mie) dans un stade pr\u00e9coce. En tant que traitement, la patiente a \u00e9t\u00e9 admise \u00e0 l'h\u00f4pital o\u00f9 elle a re\u00e7u une polyth\u00e9rapie \u00e0 base d'art\u00e9misinine (ACT). Elle a accouch\u00e9 4 semaines plus t\u00f4t, le b\u00e9b\u00e9 avait un faible poids \u00e0 la naissance, mais les deux ont surv\u00e9cu.",
+    "symptoms": [
+      4,
+      7
+    ]
+  }
+}
+]
