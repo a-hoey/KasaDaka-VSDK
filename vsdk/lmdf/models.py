@@ -23,7 +23,6 @@ class Diagnosis(models.Model):
 	def __str__(self):
 		return self.diagnosis
 	
-	
 class Patient(models.Model):
 	_urls_name = 'lmdf:patient_detail'
 	_urls_name = 'lmdf:patient_detail_fr'
